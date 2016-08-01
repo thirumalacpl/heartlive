@@ -4,7 +4,7 @@
   <author href="http://advicesync.com" email="support@advicesync.com">eImpressive</author>
   <content src="index.html"/>
 
-   <preference name="phonegap-version" value="cli-5.2.0" />
+  <preference name="phonegap-version" value="cli-6.3.0" />
 
  <!--  <preference name="permissions" value="none"/> -->
   <preference name="orientation" value="default"/>
@@ -188,9 +188,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
+
 </widget>
 
 
