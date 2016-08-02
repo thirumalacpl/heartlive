@@ -4,7 +4,7 @@ $(document).on('pageshow', '#pageone', function(){
 
 $(document).off('click', '#emergency').on('click', '#emergency', function() {
 //alert('condition emergency but clcik');
-$.ajax({url: 'http://staging.eimpressive.com/slim/slim-heart/condition.php?',
+$.ajax({url: 'http://staging.eimpressive.com/slim/slim-heart/indextest.php?',
   data:$('#new').serialize(),
   type: 'post',                   
   async: 'true',
@@ -20,7 +20,15 @@ $.ajax({url: 'http://staging.eimpressive.com/slim/slim-heart/condition.php?',
       $("#popupsearchmade").popup("open");
 //alert('Data available for the search made');
 
-       sessionStorage.setItem("condition_details_array",JSON.stringify(result[0]));
+/*       sessionStorage.setItem("condition_details_array",JSON.stringify(result[0]));
+        sessionStorage.setItem("categories_details_array",JSON.stringify(result[1]));
+           sessionStorage.setItem("activities_details_arrayaa",JSON.stringify(result[2]));*/
+
+           sessionStorage.setItem("user_data",JSON.stringify(result[1]));
+                            sessionStorage.setItem("plant_data",JSON.stringify(result[2]));
+                            //alert(sessionStorage.getItem("plant_data"));
+              sessionStorage.setItem("categories_details_array",JSON.stringify(result[3]));
+              sessionStorage.setItem("activities_details_arrayaa",JSON.stringify(result[4]));
 
 $.mobile.loading().hide();
 $.mobile.changePage($('#cond_patient_details'), { transition: "none", changeHash: true, reverse: false });

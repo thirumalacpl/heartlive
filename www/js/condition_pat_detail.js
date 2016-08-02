@@ -36,6 +36,8 @@ $.ajax({
 
 $.mobile.loading().hide();
 $.mobile.changePage($('#question_li'), { transition: "none", changeHash: true, reverse: false });
+           //   $.mobile.changePage("five.html", { transition: "slide", changeHash: true, reverse: false }); 
+
 }else {
   alert('No Data Found for the search record'); 
 }

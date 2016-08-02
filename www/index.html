@@ -76,7 +76,8 @@
 
 			 <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
 				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
-				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<!-- <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a> -->
+          <a href="#pageone" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi  zmdi-arrow-back"></i></a>
 				<h1 class="wow fadeIn" data-wow-delay='0.4s'>My Heart</h1>
 			</div>
 
@@ -104,6 +105,34 @@
                  <option value="2">2</option>
                  <option value="3">3</option>
                  <option value="4">4</option>
+                    <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                    <option value="9">9</option>
+                 <option value="10">10</option>
+                 <option value="11">11</option>
+                 <option value="12">12</option>
+                    <option value="13">13</option>
+                 <option value="14">14</option>
+                 <option value="15">15</option>
+                 <option value="16">16</option>
+                    <option value="17">17</option>
+                 <option value="18">18</option>
+                 <option value="19">19</option>
+                 <option value="20">20</option>
+                      <option value="21">21</option>
+                 <option value="22">22</option>
+                 <option value="23">23</option>
+                 <option value="24">24</option>
+                    <option value="25">25</option>
+                 <option value="26">26</option>
+                 <option value="27">27</option>
+                 <option value="28">28</option>
+                    <option value="29">29</option>
+                 <option value="30">30</option>
+                 <option value="31">31</option>
+                 <option value="32">32</option>
          </select>  
                         
     </div>
@@ -165,7 +194,8 @@
 
 
  <div data-role="page" id="question_li" >
-<script type="text/javascript" src="js/question_frl.js"></script>
+<!-- <script type="text/javascript" src="js/question_frl.js"></script> -->
+<script src="js/five.js"></script>
 <!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"> -->
 <!-- <link rel="stylesheet" href="css/my.css"> -->
 <script src="js/jquery.mobile-1.4.5.js"></script>
@@ -178,11 +208,11 @@
 
 			 <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
 				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
-				<a href="#patient_details" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi  zmdi-arrow-back"></i></a>
+				<a href="#cond_patient_details" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi  zmdi-arrow-back"></i></a>
 				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Question</h1>
 			</div>
 
-			<div role="main" class="ui-content full" data-inset="false">
+			<div role="main" class="ui-content full" >
 	
 <!-- <div class="third-bg">
       <div class="third-q"><span>SELECT THE APPROPRIATE OPTIONS </span></div>
@@ -190,45 +220,30 @@
     </div> -->
 
 
-<p class="third-hed">Chest Pain</p>
-
-
-<div  class="third-bg">
-      <div class="third-q" ><span>SELECT THE APPROPRIATE OPTIONS </span></div>
-
-    </div>
-
-<br>
-
-<!--lpa-->
-
-<!-- <form method="post" data-ajax="false" action="#" id="lpaform">
+  <form method="post" data-ajax="false" action="#" id="lpaform">
   <input type="hidden" name="activityval" id="activityval" >
-  <input type="hidden" name="checkboxval" id="checkboxval" >
-  <input type="hidden" name="responsibleval" id="responsibleval" >
-  <input type="hidden" name="findingsval" id="findingsval" >
-  <input type="hidden" name="datepickerval" id="datepickerval" >
+
   <input type="hidden" name="plant_id" id="plant_id" >
   <input type="hidden" name="part_id" id="part_id" >
   <input type="hidden" name="shift" id="shift" >
   <input type="hidden" name="user_id" id="user_id" >              
+  <div role="main" class="ui-content full"  >
 
-<div data-role="main" class="ui-content poda" id="pagination">
- <h3 class="ui-bar ui-bar-a texsb" >Create LPA</h3>
+<!-- <div data-role="main" class="ui-content poda" id="pagination"> -->
+<!--  <h3 class="ui-bar ui-bar-a texsb" >Emergency Questions</h3> -->
 
-
-
-
+<div id="pagination">
+</div>
+  
 </div>
 <form>
- -->
-<!--lpa end-->
-  
-  <div id="quest_li">
 
-  </div>
+
   
-<div class="row" style="background-color: #ebebeb; height: 70px;    margin-left: 5px;margin-right: 7px;">
+<!--   <div id="quest_li">
+<div class="ui-grid-c vgb" id="checkbox'+c+'">
+<div class="row" style="background-color: #ebebeb; height: 70px;    margin-left: 5px;
+    margin-right: 7px;">
     <div class="col-xs-8 padz ">
         <div class="box">
            Crushing - Like tighteneing with a rope
@@ -237,146 +252,42 @@
     <div class="col-xs-4 padz">
         <div class="box">
    
-    <input type="radio" id="result_yes'+c+'" name="result_yes'+c+'"  value="yes" >
-    <input type="radio" id="result_yes'+c+'" name="result_yes'+c+'"  value="no" >
+                          <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-controlgroup ui-controlgroup-horizontal ui-corner-all ui-mini"><div class="ui-controlgroup-controls ">
+                            <div class="ui-radio ui-mini"><label class="flo">Yes:</label><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'"  value="yes" ></div>
+                            
+                            <div class="ui-radio ui-mini"><label class="flo">No:</label><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'" value="no" class="marl" checked><br id="result_no_br'+c+'"><br id="result_no_br'+c+'"></div>
+                            
+                         </div></fieldset>
         </div>
     </div>
   
 </div>
-
-
-<!-- <br>
- <div class="row" style="background-color: #ebebeb; height: 70px;    background-color: #ebebeb;
-    height: 70px;
-    margin-left: 5px;
-    margin-right: 5px;">
-    <div class="col-xs-8 padz ">
-        <div class="box size">
-           Heaviness - Like pressing with a heavy weight
-
-        </div>
-    </div>
-    <div class="col-xs-4 padz">
-        <div class="box size">
-    
-                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-                            <input type="radio" name="radio-choice-a2" id="radio-choice-a2" value="choice-a2" checked="checked">
-                            <label for="radio-choice-a2">YES</label>
-                            <input type="radio" name="radio-choice-a2" id="radio-choice-b2" value="choice-b2">
-                            <label for="radio-choice-b2">NO</label>
-                         </fieldset>
-        </div>
-    </div>
+  </div></div> -->
   
-</div>
- -->
-<!-- 
-<br>
- <div class="row" style="background-color: #ebebeb; height: 70px;    background-color: #ebebeb;
-    height: 70px;
-    margin-left: 5px;
-    margin-right: 5px;">
-    <div class="col-xs-8 padz ">
-        <div class="box size">
-          Burning - like acid burn
 
-        </div>
-    </div>
-    <div class="col-xs-4 padz">
-        <div class="box size">
+<!--   <div>
+<div class="ui-grid-c vgb" id="checkbox'+c+'"><div class="ui-block-a "><label class="flo">Yes:</label><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'"  value="yes" ></div><div class="ui-block-b"><label class="flo">No:</label>
 
-                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-                            <input type="radio" name="radio-choice-a3" id="radio-choice-a3" value="choice-a3" checked="checked">
-                            <label for="radio-choice-a3">YES</label>
-                            <input type="radio" name="radio-choice-a3" id="radio-choice-b3" value="choice-b3">
-                            <label for="radio-choice-b3">NO</label>
-                         </fieldset>
-        </div>
-    </div>
-  
-</div> -->
+<input type="radio" id="result_yes'+c+'" name="result_yes'+c+'" value="no" class="marl"><br id="result_no_br'+c+'">
 
-<!-- <br>
- <div class="row" style="background-color: #ebebeb; height: 70px;    background-color: #ebebeb;
-    height: 70px;
-    margin-left: 5px;
-    margin-right: 5px;">
-    <div class="col-xs-8 padz ">
-        <div class="box size">
-        Sharp - like stabbing with knife
-
-        </div>
-    </div>
-    <div class="col-xs-4 padz">
-        <div class="box size">
- 
-                         <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-                            <input type="radio" name="radio-choice-a4" id="radio-choice-a4" value="choice-a4" checked="checked">
-                            <label for="radio-choice-a4">YES</label>
-                            <input type="radio" name="radio-choice-a4" id="radio-choice-b4" value="choice-b4">
-                            <label for="radio-choice-b4">NO</label>
-                         </fieldset>
-        </div>
-    </div>
-  
-</div> -->
-
-<!-- <br>
-
- <div class="row" style="background-color: #ebebeb; height: 70px;    background-color: #ebebeb;
-    height: 70px;
-    margin-left: 5px;
-    margin-right: 5px;">
-    <div class="col-xs-8 padz ">
-        <div class="box size">
-        Sharp - like stabbing with knife
-
-        </div>
-    </div>
-    <div class="col-xs-4 padz">
-        <div class="box size">
-
-                           <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-                            <input type="radio" name="radio-choice-a5" id="radio-choice-a5" value="choice-a5" checked="checked">
-                            <label for="radio-choice-a5">YES</label>
-                            <input type="radio" name="radio-choice-a5" id="radio-choice-b5" value="choice-b5">
-                            <label for="radio-choice-b5">NO</label>
-                         </fieldset>
-        </div>
-    </div>
-  
-</div> -->
-
+</div><div class="ui-block-c "><label class="flo">N/A:</label ><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'" value="na" checked></div><div class="ui-block-d"><a href="#" class="ui-btn pls ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext"  id="add'+c+'" onclick="showfields('+c+');">Add</a><a href="#" id="minus'+c+'" class="ui-btn pls ui-shadow ui-corner-all ui-icon-minus ui-btn-icon-notext" style="display:none" onclick="hidefields('+c+');" >Minus</a><br id="result_na_br'+c+'" style="display:none;"></div></div><div class="paf"><input type="text"   id="findings'+c+'" name="findings'+c+'" placeholder="Findings" style="display:none;"><select name="responsibility'+c+'" id="responsibility'+c+'" onchange="enabledate('+c+');" ><option value="0">Choose Responsibility</option><option value="supervisor">Supervisor</option><option value="Manager">Manager</option><option value="GM">GM</option></select><input type="date" style="display:none;"  id="datepicker'+c+'" name="datepicker'+c+'"  disabled/></div>
+  </div> -->
 
 <div class="row">
 <div class="col-xs-3 padz"></div>
  <div class="col-xs-6 padz">
    
-<a href="#search_nearby_list" class="txt-dec">  <input type="button" value="Enter" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" id="patient_deta_enter"> </a>
+<a href="" class="txt-dec">  <input type="button" value="Enter" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" id="lpa_create"> </a>
  </div>
 
 <div class="col-xs-3 padz"></div>
 
 
 </div>
-<!--search works start-->
-<!-- <div>
-  <center><img style="text-align: center" src="img/logo.png" width="225" height="225"/></center>
-    <label id="whatsearch" for="search" style="text-align: center;">What Would You Like To Search?</label>
-    <select name="search" id="choice" data-native-menu="false">
-      <option value="atm">ATM</option>
-      <option value="hospital">hospital</option>
-      <option value="restaurant">Restaurant</option>
-    </select>
-<button id="searchbutton" class="ui-btn" onclick="Myfunc()">Search</button>
 
-   <a href="#pagethree" class="txt-dec"  id="search_list">  <input type="button" value="Near By Hospital" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" id="patient_deta_enter"> </a>
-</div> -->
-<!--search works end-->
 </div>
 </div>
 
-<!--map test file inserted start-->
 <!--page three end-->
 
 
